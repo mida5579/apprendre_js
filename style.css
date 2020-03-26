@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body
+{
+   position: relative; 
+}
+
+#btn-link
+{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(153, 9, 9);
+    color: #fff;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .3s ease-in-out;
+}
+
+#btn-link:hover
+{
+    background-color:rgb(7, 7, 116);
+    color: #fff;
+}
+
+#btn-link:focus
+{
+   outline: none;
+}
