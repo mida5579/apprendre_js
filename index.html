@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apprendre JS</title>
+    <title>Apprendre_JS</title>
 
     <!-- my styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <button onclick="bodycolor('rgb(153, 9, 9)')" id="btn-link"> body color</button>
-    <script src="apprendre.js"></script>
+    <script>
+       var body=document.body;
+        function changeColor()
+        {
+            var colors=["orange","white","green","red","blue","purple"];
+            const colorIndex =Math.floor(Math.random()*colors.length);
+            var color = colors[colorIndex];
+            body.bgColor= color;  
+        }
+    </script>
+     <button onclick="changeColor()" id="btn-link"> body color</button>
 </body>
 </html>
